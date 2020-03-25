@@ -1,0 +1,20 @@
+<%- include('templates/header'); -%>
+<div class="container">
+    <div class="jumbotron">
+        <h1>SEARCH RESULTS</h1>
+        <button class="btn btn-info" onClick='location.href="/"'>Search Again</button>
+    </div>
+    <div class="form-group row">
+       <img src='<%=data.cover.large%>' >
+       Title: <%=data.title%> <br>
+       Author: <%=data.authors[0].name%> <br>
+       Publish: <%=data.publish_date%> <br>
+       Publisher: <%=data.publishers[0].name%> <br>
+       ISBN: <%=data.identifiers.isbn_10%><br>
+       Pages: <%=data.number_of_pages%>
+    </div>
+</div>
+
+
+
+<%- include('templates/footer'); -%>
